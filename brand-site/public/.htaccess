@@ -1,10 +1,12 @@
 # Next.js Static Export Configuration
 
-# Enable directory indexing
-Options +Indexes
-DirectoryIndex index.html
+# Disable directory indexing for security
+Options -Indexes +FollowSymLinks
 
-# Allow access from all
+# Set default index file
+DirectoryIndex index.html index.htm
+
+# Allow access from all - Override parent directory restrictions
 <IfModule mod_authz_core.c>
     Require all granted
 </IfModule>
@@ -18,16 +20,15 @@ DirectoryIndex index.html
 # Enable rewrite engine
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /
+    RewriteBase /brand/
 
-    # Remove trailing slash from URLs (except for directories)
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.+)/$ /$1 [R=301,L]
+    # If the request is for a file or directory that exists, serve it
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
 
-    # Handle SPA routing - redirect all requests to index.html if file doesn't exist
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /index.html [L]
+    # Otherwise, serve index.html for client-side routing
+    RewriteRule ^ index.html [L]
 </IfModule>
 
 # Security headers
