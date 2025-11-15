@@ -9,7 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: brand-site/package-lock.json
+
+      - name: Install dependencies
+        run: |
+          cd brand-site
+          npm ci
+
+      - name: Build Next.js site
+        run: |
+          cd brand-site
+          npm run build
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
@@ -17,3 +34,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /yojitu.com/public_html/brand/
+          local-dir: ./brand-site/out/
