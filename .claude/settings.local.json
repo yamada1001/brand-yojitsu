@@ -4,7 +4,14 @@
       "Bash(mv:*)",
       "Bash(git add:*)",
       "Bash(git commit -m \"$(cat <<''EOF''\nChange to PHP\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:yojitu.com)",
+      "Bash(npx create-next-app:*)",
+      "Bash(yes:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
