@@ -1,19 +1,5 @@
-import CustomCursor from '@/components/CustomCursor';
-import HeroDesigner from '@/components/HeroDesigner';
-import PricingDesigner from '@/components/PricingDesigner';
-import PortfolioDesigner from '@/components/PortfolioDesigner';
-import ContactDesigner from '@/components/ContactDesigner';
+import SimpleLayout from '@/components/SimpleLayout';
 
 export default function Home() {
-  return (
-    <>
-      <CustomCursor />
-      <main>
-        <HeroDesigner />
-        <PricingDesigner />
-        <PortfolioDesigner />
-        <ContactDesigner />
-      </main>
-    </>
-  );
+  return <SimpleLayout />;
 }
