@@ -1,22 +1,15 @@
-import ParticleBackground from '@/components/ParticleBackground';
-import SmoothScroll from '@/components/SmoothScroll';
-import Hero from '@/components/Hero';
-import PricingSection from '@/components/PricingSection';
-import PortfolioSection from '@/components/PortfolioSection';
-import ContactSection from '@/components/ContactSection';
+import HeroMinimal from '@/components/HeroMinimal';
+import PricingMinimal from '@/components/PricingMinimal';
+import PortfolioMinimal from '@/components/PortfolioMinimal';
+import ContactMinimal from '@/components/ContactMinimal';
 
 export default function Home() {
   return (
-    <>
-      <SmoothScroll />
-      <ParticleBackground />
-
-      <main className="relative">
-        <Hero />
-        <PricingSection />
-        <PortfolioSection />
-        <ContactSection />
-      </main>
-    </>
+    <main>
+      <HeroMinimal />
+      <PricingMinimal />
+      <PortfolioMinimal />
+      <ContactMinimal />
+    </main>
   );
 }

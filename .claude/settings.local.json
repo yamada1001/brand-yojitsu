@@ -11,7 +11,9 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(curl:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)",
+      "WebFetch(domain:brand.yojitu.com)"
     ],
     "deny": [],
     "ask": []
