@@ -16,4 +16,4 @@ jobs:
           server: sv16695.xserver.jp
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /yojitsu.com/public_html/brand/
+          server-dir: /yojitu.com/public_html/brand/
