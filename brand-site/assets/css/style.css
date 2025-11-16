@@ -885,8 +885,8 @@ button {
    アニメーション用クラス
 ======================================== */
 .fade-in {
-    opacity: 0;
-    transform: translateY(30px);
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -896,8 +896,8 @@ button {
 }
 
 .fade-in-left {
-    opacity: 0;
-    transform: translateX(-30px);
+    opacity: 1;
+    transform: translateX(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -907,8 +907,8 @@ button {
 }
 
 .fade-in-right {
-    opacity: 0;
-    transform: translateX(30px);
+    opacity: 1;
+    transform: translateX(0);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -918,8 +918,8 @@ button {
 }
 
 .scale-in {
-    opacity: 0;
-    transform: scale(0.9);
+    opacity: 1;
+    transform: scale(1);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
