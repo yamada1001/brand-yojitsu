@@ -1,21 +1,4 @@
-# PHP設定
-php_flag display_errors On
-php_flag log_errors On
-
 # ディレクトリリスティングを無効化
 Options -Indexes
-
-# MIME Type設定
-<IfModule mod_mime.c>
-  AddType application/javascript js
-  AddType text/css css
-</IfModule>
-
-# セキュリティヘッダー
-<IfModule mod_headers.c>
-  Header set X-XSS-Protection "1; mode=block"
-  Header always append X-Frame-Options SAMEORIGIN
-  Header set X-Content-Type-Options nosniff
-</IfModule>
 
 DirectoryIndex index.php
