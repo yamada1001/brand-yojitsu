@@ -1,5 +1,5 @@
-import SimpleLayout from '@/components/SimpleLayout';
+import StudioLayout from '@/components/StudioLayout';
 
 export default function Home() {
-  return <SimpleLayout />;
+  return <StudioLayout />;
 }
