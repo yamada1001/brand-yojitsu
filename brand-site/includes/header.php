@@ -77,7 +77,7 @@ if (!defined('OG_IMAGE')) define('OG_IMAGE', SITE_URL . IMG_PATH . '/og-image.pn
     </div>
 
     <!-- ローディングアニメーション -->
-    <div id="loading" class="loading-screen">
+    <div id="loading" class="loading-screen" style="display: none;">
         <div class="loading-content">
             <div class="loading-logo">
                 <span class="loading-text">余日</span>
