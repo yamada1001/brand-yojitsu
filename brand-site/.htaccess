@@ -59,7 +59,6 @@ Options -Indexes
 # URLリライト（必要に応じて設定）
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /brand-site/
 
   # index.phpをトップページとして表示
   RewriteCond %{REQUEST_FILENAME} !-f

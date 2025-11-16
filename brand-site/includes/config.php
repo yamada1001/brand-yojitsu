@@ -1,7 +1,7 @@
 <?php
 // サイト基本設定
 define('SITE_NAME', '余日 | YOJITSU');
-define('SITE_URL', 'https://yojitu.com');
+define('SITE_URL', 'https://brand.yojitu.com');
 define('SITE_DESCRIPTION', 'Webサイト制作、LP制作、ショート動画制作を提供する余日（ヨジツ）の公式サイト。マーケティング視点を活かした制作で、お客様のビジネスをサポートします。');
 define('SITE_KEYWORDS', 'Web制作,LP制作,動画制作,ショート動画,マーケティング,SEO,余日,ヨジツ');
 
@@ -22,7 +22,7 @@ define('SNS_FACEBOOK', '');
 define('SNS_YOUTUBE', 'https://youtube.com/@yojitsu');
 
 // パス設定
-define('BASE_PATH', '/brand-site');
+define('BASE_PATH', '');
 define('ASSETS_PATH', BASE_PATH . '/assets');
 define('CSS_PATH', ASSETS_PATH . '/css');
 define('JS_PATH', ASSETS_PATH . '/js');
